@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+{% block content %}
+<h1>{{object.first_name}} {{object.last_name}}</h1>
+<p>{{object.mobile}}</p>
+<p>{{object.email}}</p>
+
+<td><button><a href='/{{object.pk}}/delete' class='btn text-secondary px-0'>Delete</a></button></td>
+<td><button><a href='/{{object.pk}}/update' class='btn text-secondary px-0'>Update</a></button></td>
+
+
+{% endblock content%}
